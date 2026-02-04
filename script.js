@@ -133,9 +133,9 @@ document.querySelectorAll(".copiar-cuenta").forEach(btn => {
   btn.addEventListener("click", () => {
     const texto = btn.dataset.texto;
     navigator.clipboard.writeText(texto).then(() => {
-      btn.textContent = "✅ Copiado";
+      btn.textContent = "Copiado";
       setTimeout(() => {
-        btn.textContent = "📋 Copiar";
+        btn.textContent = "Copiado";
       }, 2000);
     });
   });
@@ -174,3 +174,4 @@ if (zoomBox) {
   verificarZoom();          // Ejecuta al cargar
   setInterval(verificarZoom, 60000); // Revisa cada 1 minuto
 }
+
